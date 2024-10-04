@@ -746,7 +746,6 @@ nav ul li a:hover {
 }
 
 /* Media Queries */
-
 /* Medium screens (Tablets, small desktops) */
 @media (max-width: 1024px) {
     .product-card img {
@@ -755,7 +754,6 @@ nav ul li a:hover {
         object-fit: contain;
     }
 
-    /* Adjust the product grid for consistency in image size */
     .product-grid {
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
@@ -815,9 +813,6 @@ nav ul li a:hover {
 
 /* Small screens (Mobile) */
 @media (max-width: 768px) {
-
-    /* Adjusting header layout */
-
     nav ul li a {
         padding: 0;
     }
@@ -1097,7 +1092,8 @@ nav ul li a:hover {
     }
 
     .product-name,
-    .product-price {
+    .product-price,
+    .footer p {
         font-size: 10px;
     }
 
@@ -1117,5 +1113,10 @@ nav ul li a:hover {
 
     .info-column h3 {
         font-size: 14px;
+    }
+
+    .credit-cards img {
+        width: 30px;
+        margin-left: 3px;
     }
 }
