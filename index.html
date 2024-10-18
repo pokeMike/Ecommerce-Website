@@ -78,20 +78,41 @@
             </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                <li><a href="#">Categories Tab</a></li>
-                <li><a href="#">Tabs Inside</a></li>
-                <li><a href="#"><i class="fa-solid fa-star"></i>Other Demos</a></li>
-                <li><a href="#">Another Tab</a></li>
-                <li><a href="#"><i class="fas fa-rocket"></i> Mix </a></li>
-            </ul>
-            <div class="must-see">
-                <span><i class="fas fa-rocket"></i>Must See!</span>
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Categories Tab</a></li>
+                    <li><a href="#">Tabs Inside</a></li>
+                    <li><a href="#"><i class="fa-solid fa-star"></i>Other Demos</a>
+                        <div class="must-see">
+                            <span><i class="fas fa-rocket"></i>Must See!</span>
+                        </div>
+                    </li>
+                    <li><a href="#">Another Tab</a>
+                        <div class="label-example">
+                            <span><i class="fa-regular fa-heart"></i>Label example</span>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-rocket"></i> Mix </a></li>
+                </ul>
             </div>
-            <div class="label-example">
-                <span><i class="fa-regular fa-heart"></i>Label example</span>
-            </div>
+            <!-- Mobile Menu & Hamburger Icon -->
+            <div class="navbar__mobile-menu">
+                <div class="navbar__mobile-menu-toggle">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <div class="navbar__mobile-menu-items">
+                    <ul class="navbar__mobile-menu-list">
+                        <li class="navbar__mobile-menu-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li class="navbar__mobile-menu-item"><a href="#">Categories Tab</a></li>
+                        <li class="navbar__mobile-menu-item"><a href="#">Tabs Inside</a></li>
+                        <li class="navbar__mobile-menu-item"><a href="#"><i class="fa-solid fa-star"></i>Other
+                                Demos</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item"><a href="#">Another Tab</a></li>
+                        <li class="navbar__mobile-menu-item"><a href="#"><i class="fas fa-rocket"></i> Mix </a></li>
+                    </ul>
+                </div>
         </nav>
     </header>
 
@@ -233,8 +254,8 @@
             <div class="product-card">
                 <a href="#">
                     <span class="product-new">New</span>
-                    <img src="images/kids.jpg" alt="kids dress" class="product-image">
-                    <h3>Kids Fashion</h3>
+                    <img src="images/fulltshirt.jpg" alt="tshirt" class="product-image">
+                    <h3>Full T-Shirt</h3>
                     <p>$33.21</p>
                 </a>
             </div>
@@ -338,8 +359,8 @@
         <div class="product-grid">
             <div class="product-item">
                 <a href="#">
-                    <img src="/images/fulltshirt.jpg" alt="Product 1">
-                    <p class="product-name">fulltshirt</p>
+                    <img src="/images/kids.jpg" alt="Product 1">
+                    <p class="product-name">Kids Dress</p>
                     <p class="product-price">$50</p>
                 </a>
             </div>
@@ -385,7 +406,7 @@
                     <li><a href="#">Best Sellers</a></li>
                     <li><a href="#">Our Stores</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li class="About_Us"><a href="#">About Us</a></li>
                 </ul>
             </div>
             <div class="info-column">
@@ -426,7 +447,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

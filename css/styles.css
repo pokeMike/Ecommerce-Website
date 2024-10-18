@@ -51,38 +51,32 @@ ol {
 /* Header Top Section */
 .header-top {
     background-color: #ffffff;
-    padding: 10px 20px;
+    padding: 8px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
 
 .header-info {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .header-info li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-.header-info a {
+.header-info a,
+.header-right a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
 }
 
 .header-right a {
     margin-right: 10px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .header-right img {
@@ -140,14 +134,13 @@ ol {
 .search-bar {
     display: flex;
     align-items: center;
-    border: 1px solid #333;
+    border: 1px solid #8f8f8f;
 }
 
 .search-bar input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px 0 0 5px;
 }
 
 .search-bar button {
@@ -220,13 +213,14 @@ ol {
 
 /* Navigation Section */
 nav {
-    background-color: #f8f8f8;
-    padding: 15px 0;
+    background-color: #ffffff;
+    padding: 17px 0;
     border-top: 3px solid #ccc;
     border-bottom: 3px solid #ccc;
     text-transform: uppercase;
-    font-family: serif;
-    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
 
 nav ul {
@@ -256,8 +250,8 @@ nav ul li:not(:last-child)::after {
 nav ul li a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
-    padding: 15px 20px;
+    color: #8e8e8e;
+    padding: 16px 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -273,8 +267,8 @@ nav ul li a:hover {
 
 .must-see {
     position: absolute;
-    top: 31%;
-    left: 54%;
+    top: -25px;
+    right: 0;
     font-size: 10px;
     background: rgb(0, 0, 0);
     color: #ffffff;
@@ -283,12 +277,50 @@ nav ul li a:hover {
 
 .label-example {
     position: absolute;
-    top: 31%;
-    left: 64%;
+    top: -25px;
+    right: 0;
     font-size: 10px;
     background: rgb(0, 157, 255);
     color: #ffffff;
     padding: 4px;
+}
+
+/*Mobile Menu*/
+.navbar__mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 10px;
+}
+
+.navbar__mobile-menu-items {
+    position: absolute;
+    top: 160%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    opacity: 0.95;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.navbar__mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar__mobile-menu-items {
+    transform: translateX(100%);
+}
+
+.navbar__mobile-menu-items.active {
+    transform: translateX(0);
 }
 
 /* Banner Section */
@@ -300,14 +332,14 @@ nav ul li a:hover {
 .banner img {
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 520px;
     object-fit: cover;
 }
 
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 350px;
+    left: 300px;
     transform: translateY(-50%);
     z-index: 10;
     display: flex;
@@ -319,7 +351,7 @@ nav ul li a:hover {
     display: inline-block;
     background-color: rgb(0, 157, 255);
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .banner-description {
@@ -338,7 +370,7 @@ nav ul li a:hover {
 
 .banner-description p {
     margin: 0;
-    font-size: 35px;
+    font-size: 30px;
     color: rgb(0, 157, 255);
 }
 
@@ -354,7 +386,7 @@ nav ul li a:hover {
 
 .cookie-notice {
     display: flex;
-    margin: 0 70px;
+    margin: 0 7rem;
     padding-top: 10px;
     justify-content: space-between;
 }
@@ -373,14 +405,14 @@ nav ul li a:hover {
 
 /* Seasons Cards Section */
 .season-cards {
-    margin: 10px 50px 10px 50px;
+    margin: 10px 7rem 10px 7rem;
     text-align: center;
 }
 
 .season-cards h2 {
     padding-bottom: 10px;
     margin-top: -30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .season-h2-bottom-border {
@@ -428,6 +460,7 @@ nav ul li a:hover {
     margin-bottom: 0px;
     z-index: 1;
     position: relative;
+    letter-spacing: 8px;
 }
 
 .season-top h4 {
@@ -453,7 +486,6 @@ nav ul li a:hover {
 
 .season-card:hover .season-top img {
     transform: scale(1.1);
-    /* Slightly zoom in the image when the card is hovered */
 }
 
 .season-bottom {
@@ -464,7 +496,8 @@ nav ul li a:hover {
 }
 
 .season-bottom h4 {
-    font-size: 18px;
+    font-size: 14px;
+    color: #999;
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
@@ -493,7 +526,7 @@ nav ul li a:hover {
 
 /* Featured Products Section */
 .featured-products {
-    margin: 0 50px 50px;
+    margin: 0 7rem 50px;
     text-align: center;
 }
 
@@ -503,13 +536,13 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .featured-products h2 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .featured-products-directional-keys {
@@ -532,14 +565,14 @@ nav ul li a:hover {
 .separator {
     border: none;
     border-top: 2px solid #ddd;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .product-card {
@@ -556,23 +589,22 @@ nav ul li a:hover {
 
 .product-card img {
     width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    height: 270px;
     object-fit: cover;
     max-height: 300px;
 }
 
 .product-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .product-card p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #333;
+    color: #434cd8;
 }
 
 .product-new {
@@ -580,7 +612,7 @@ nav ul li a:hover {
     top: 20px;
     left: 5px;
     background-color: #fff;
-    padding: 2px;
+    padding: 0px 4px;
     font-size: 12px;
     font-weight: bold;
     color: navy;
@@ -593,7 +625,7 @@ nav ul li a:hover {
     right: 5px;
     background-color: #f96363;
     color: #fff;
-    padding: 2px;
+    padding: 0px 4px;
     font-size: 12px;
     font-weight: bold;
     border: 1px solid #cccccc;
@@ -604,7 +636,7 @@ nav ul li a:hover {
     top: 45px;
     left: 5px;
     background-color: #fff;
-    padding: 2px;
+    padding: 0px 4px;
     font-size: 12px;
     font-weight: bold;
     border: 1px solid #cccccc;
@@ -612,7 +644,7 @@ nav ul li a:hover {
 
 .product-oos {
     position: absolute;
-    bottom: 90px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -625,13 +657,13 @@ nav ul li a:hover {
 
 .product-Options {
     position: absolute;
-    bottom: 90px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
     color: orangered;
     padding: 2px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     border: 1px solid #cccccc;
     width: 86%;
@@ -640,7 +672,8 @@ nav ul li a:hover {
 /* Gallery Section */
 .gallery-grid {
     padding: 50px;
-    padding-right: 70px;
+    padding-left: 6rem;
+    padding-right: 7rem;
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 20px;
@@ -650,18 +683,18 @@ nav ul li a:hover {
 .gallery-item:nth-of-type(1) {
     grid-column: 1;
     grid-row: span 2;
-    height: 500px;
+    height: 550px;
 
 }
 
 .gallery-item:nth-of-type(2) {
     grid-column: 2;
-    height: 240px;
+    height: 265px;
 }
 
 .gallery-item:nth-of-type(3) {
     grid-column: 2;
-    height: 240px;
+    height: 265px;
 }
 
 .gallery-item {
@@ -702,7 +735,7 @@ nav ul li a:hover {
 .brands-section {
     width: 100%;
     padding: 50px 0;
-    height: 250px;
+    height: 265px;
     background-image: url('/images/brands-background.jpg');
     background-size: cover;
     background-position: center;
@@ -785,7 +818,7 @@ nav ul li a:hover {
 
 /* Product List Section */
 .product-list {
-    padding: 50px 60px;
+    padding: 30px 60px;
 }
 
 .product-header {
@@ -806,7 +839,7 @@ nav ul li a:hover {
 .product-header h2 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .directional-keys {
@@ -884,7 +917,7 @@ nav ul li a:hover {
 .info-section {
     background-color: #333;
     color: white;
-    padding: 50px 20px;
+    padding: 5px 6rem;
 }
 
 .info-container {
@@ -895,9 +928,6 @@ nav ul li a:hover {
 
 .info-column {
     list-style: none;
-    font-size: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .info-column h3 {
@@ -905,6 +935,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
     border-bottom: 1px solid #555;
     padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 .info-column li {
@@ -915,7 +946,7 @@ nav ul li a:hover {
 }
 
 .store-info p {
-    color: #f1f1f1;
+    color: #b3b3b3;
     padding-bottom: 10px;
 }
 
@@ -928,16 +959,17 @@ nav ul li a:hover {
 .info-column a {
     color: white;
     text-decoration: none;
-
     font-size: 12px;
 }
 
 .newsletter input {
     padding: 10px;
     width: 100%;
-    border: none;
+    border-color: #999;
     border-radius: 5px;
     font-size: 12px;
+    background: #333;
+    color: #ccc;
 }
 
 .newsletter p {
@@ -1007,8 +1039,8 @@ nav ul li a:hover {
     }
 
     .header-main .search-bar input {
-        width: 80%;
-        padding: 10px;
+        width: 94%;
+        padding: 12px;
     }
 
     .header-main .cart {
@@ -1037,6 +1069,25 @@ nav ul li a:hover {
 
 /* Small screens (Mobile) */
 @media (max-width: 768px) {
+
+    /* Navbar */
+    .header-top {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__mobile-menu {
+        display: block;
+    }
+
+    nav ul li {
+        position: unset;
+    }
+
     nav ul li a {
         padding: 0;
     }
@@ -1047,14 +1098,14 @@ nav ul li a:hover {
         justify-items: center;
         text-align: center;
         margin-bottom: 20px;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .search-bar {
-        grid-row: 1;
         width: 100%;
         display: block;
         margin-bottom: 10px;
-        margin-left: 60px;
     }
 
     .search-bar input {
@@ -1066,7 +1117,6 @@ nav ul li a:hover {
     .logo {
         grid-row: 2;
         margin-bottom: 10px;
-        width: 50%;
     }
 
     .cart {
@@ -1081,6 +1131,28 @@ nav ul li a:hover {
         transform: translateX(-65%);
         z-index: 10;
         border-radius: 5px;
+    }
+
+    .banner-bottom-border {
+        bottom: 156px;
+    }
+
+    .cookie-notice {
+        display: none;
+    }
+
+    .season-cards {
+        margin-top: -8rem;
+        margin-bottom: 2rem;
+    }
+
+    .season-card {
+        padding: 5px;
+    }
+
+    .seasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
     }
 
     /* Featured and product sections adjustments */
@@ -1106,18 +1178,22 @@ nav ul li a:hover {
         max-height: 10rem;
     }
 
-    .season-cards {
-        margin-top: -5rem;
-        margin-bottom: 2rem;
+    .product-new {
+        top: 15px;
+        left: 25px;
     }
 
-    .season-card {
-        padding: 5px;
+    .product-Sale {
+        top: 15px;
+        right: 25px;
     }
 
-    .seasons-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
+    .product-OO {
+        display: none;
+    }
+
+    .product-oos {
+        bottom: 82px;
     }
 
     .brands-grid {
@@ -1128,7 +1204,11 @@ nav ul li a:hover {
 
     .gallery-grid {
         grid-template-columns: none;
-        margin-top: -3rem;
+        margin-top: -5rem;
+    }
+
+    .overlay {
+        font-size: 35px;
     }
 
     .gallery-item img {
@@ -1149,7 +1229,13 @@ nav ul li a:hover {
         padding-right: 0px;
         font-size: 14px;
     }
+
+    .info-section {
+        padding: 3px 2rem;
+    }
 }
+
+
 
 /* Extra small screens (Mobile Portrait) */
 @media (max-width: 480px) {
@@ -1157,21 +1243,17 @@ nav ul li a:hover {
         font-size: 12px;
     }
 
-    .header-right a,
-    .header-info a {
-        margin-right: 0px;
-        font-size: 10px;
+    .header-top {
+        display: none;
     }
 
     .header-main {
-        display: block;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .logo {
-        width: 60%;
-        margin-left: 22px;
+        margin-left: -30px;
     }
 
     .search-bar {
@@ -1201,6 +1283,10 @@ nav ul li a:hover {
         font-size: 11px;
     }
 
+    .navbar__mobile-menu-items {
+        padding: 1rem 2rem;
+    }
+
     .banner-text {
         top: -10rem;
         left: 45%;
@@ -1213,15 +1299,21 @@ nav ul li a:hover {
     .banner img {
         width: 100%;
         height: auto;
-        max-height: 200px;
+        max-height: 250px;
         object-fit: cover;
+    }
+
+    .banner-bottom-border {
+        bottom: 90px;
     }
 
     .season-top {
         height: 130px;
     }
 
-
+    .season-cards {
+        margin: -5rem 2rem 10px 2rem;
+    }
 
     .season-bottom {
         padding: 0px;
@@ -1231,7 +1323,7 @@ nav ul li a:hover {
     .season-top h3,
     .featured-products h2,
     .product-header h2 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .season-bottom h4,
@@ -1245,11 +1337,22 @@ nav ul li a:hover {
     }
 
     .featured-products-directional-keys {
-        right: 0px;
+        display: none;
+    }
+
+    .featured-products {
+        margin-top: 1rem;
     }
 
     .separator {
-        margin-bottom: -20px;
+        margin-bottom: -5px;
+    }
+
+    .product-new,
+    .product-Sale {
+        padding: 0px 2px;
+        font-size: 8px;
+
     }
 
     .brand-grid {
