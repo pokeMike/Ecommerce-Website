@@ -15,7 +15,7 @@ h2,
 h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: #969696;
+    color: #c5c5c5;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h3 {
 
 p {
     font-size: 14px;
-    color: #666;
+    color: #c5c5c5;
 }
 
 a {
@@ -64,19 +64,19 @@ ol {
 }
 
 .header-info li {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .header-info a,
 .header-right a {
     text-decoration: none;
-    color: #333;
+    color: #5e5e5e;
     font-size: 11px;
     font-weight: 500;
 }
 
 .header-right a {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .header-right img {
@@ -122,7 +122,7 @@ ol {
 
 .text-above-search a {
     text-decoration: none;
-    color: #333;
+    color: #5e5e5e;
 }
 
 .search {
@@ -183,7 +183,7 @@ ol {
 
 
 .blue {
-    background-color: rgb(59, 157, 237);
+    background-color: #4A5B93;
     color: white;
     padding: 5px 10px;
     font-size: 13px;
@@ -203,6 +203,7 @@ ol {
 }
 
 .sign-in {
+    color: #5e5e5e;
     font-size: 12px;
     font-weight: 500;
 }
@@ -256,7 +257,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #fa541d;
+    background-color: #E16565;
     color: white;
 }
 
@@ -280,7 +281,7 @@ nav ul li a:hover {
     top: -25px;
     right: 0;
     font-size: 10px;
-    background: rgb(0, 157, 255);
+    background: #4A5B93;
     color: #ffffff;
     padding: 4px;
 }
@@ -349,7 +350,7 @@ nav ul li a:hover {
 
 .banner-title {
     display: inline-block;
-    background-color: rgb(0, 157, 255);
+    background-color: #186C9A;
     padding: 5px 10px;
     margin-bottom: 20px;
 }
@@ -371,7 +372,7 @@ nav ul li a:hover {
 .banner-description p {
     margin: 0;
     font-size: 30px;
-    color: rgb(0, 157, 255);
+    color: #186C9A;
 }
 
 .banner-bottom-border {
@@ -391,16 +392,22 @@ nav ul li a:hover {
     justify-content: space-between;
 }
 
+.cookie-notice p {
+    font-size: 12px;
+}
+
 .cookie-notice button {
-    padding: 8px;
+    padding: 6px;
     background-color: #b0b0b0;
     color: #fff;
     transition: background-color 0.5s ease, color 0.5s ease;
     font-weight: bold;
+    font-size: 10px;
+    border: none;
 }
 
 .cookie-notice button:hover {
-    background-color: rgb(0, 157, 255);
+    background-color: #4A5B93;
 }
 
 /* Seasons Cards Section */
@@ -412,7 +419,7 @@ nav ul li a:hover {
 .season-cards h2 {
     padding-bottom: 10px;
     margin-top: -30px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .season-h2-bottom-border {
@@ -489,7 +496,7 @@ nav ul li a:hover {
 }
 
 .season-bottom {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-align: left;
@@ -542,7 +549,8 @@ nav ul li a:hover {
 .featured-products h2 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    color: #acacac;
 }
 
 .featured-products-directional-keys {
@@ -604,7 +612,7 @@ nav ul li a:hover {
 .product-card p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #434cd8;
+    color: #4A5B93;
 }
 
 .product-new {
@@ -615,7 +623,7 @@ nav ul li a:hover {
     padding: 0px 4px;
     font-size: 12px;
     font-weight: bold;
-    color: navy;
+    color: #4A5B93;
     border: 1px solid #cccccc;
 }
 
@@ -839,7 +847,8 @@ nav ul li a:hover {
 .product-header h2 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    color: #acacac
 }
 
 .directional-keys {
@@ -864,7 +873,7 @@ nav ul li a:hover {
 }
 
 .directional-key-box span {
-    color: #000;
+    color: #909090;
     font-size: 24px;
 }
 
@@ -910,13 +919,13 @@ nav ul li a:hover {
 .product-price {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color: #007efd;
+    color: #4A5B93;
 }
 
 /*info Section*/
 .info-section {
     background-color: #333;
-    color: white;
+    color: #6b6b6b;
     padding: 5px 6rem;
 }
 
@@ -934,7 +943,7 @@ nav ul li a:hover {
     font-size: 16px;
     margin-bottom: 10px;
     border-bottom: 1px solid #555;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-top: 10px;
 }
 
@@ -946,7 +955,7 @@ nav ul li a:hover {
 }
 
 .store-info p {
-    color: #b3b3b3;
+    color: #6b6b6b;
     padding-bottom: 10px;
 }
 
@@ -957,7 +966,7 @@ nav ul li a:hover {
 }
 
 .info-column a {
-    color: white;
+    color: #6b6b6b;
     text-decoration: none;
     font-size: 12px;
 }
@@ -975,7 +984,7 @@ nav ul li a:hover {
 .newsletter p {
     margin-top: 10px;
     font-size: 12px;
-    color: #ccc;
+    color: #6b6b6b;
 }
 
 /* Footer Section */
