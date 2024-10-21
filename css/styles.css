@@ -497,7 +497,8 @@ nav ul li a:hover {
 
 .season-bottom {
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-size: 14px;
     text-align: left;
 }
@@ -515,7 +516,7 @@ nav ul li a:hover {
 .season-bottom p {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
-    color: #555;
+    color: #999;
     text-align: center;
 }
 
